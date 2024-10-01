@@ -75,3 +75,53 @@ button:hover {
 .signup-section h2 {
     margin-bottom: 15px;
 }
+
+/* New styles for additional HTML elements */
+
+/* For list elements, if applicable */
+ul {
+    list-style-type: none; /* Remove default bullets */
+    padding-left: 0;
+}
+
+li {
+    margin: 10px 0;
+    padding: 10px;
+    background: #e9ecef;
+    border-radius: 5px;
+}
+
+/* Add styles for a button within forms */
+form button {
+    width: 100%; /* Make buttons full width inside forms */
+}
+
+/* Feedback messages */
+.feedback-message {
+    margin: 15px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* Responsive design enhancements */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px; /* Reduced padding on smaller screens */
+    }
+
+    button {
+        padding: 8px 10px;
+    }
+}
