@@ -7,6 +7,14 @@
     
 </head>
 <body>
+
+    @auth 
+    <p>Logged in</p>
+    <form action="/logout" method="POST">
+        @csrf
+        <button>Log out</button>
+    </form>
+    @else 
     <div style="border: 3px solid black;">
 
         <h2>Register</h2>
@@ -19,5 +27,20 @@
         </form>
 
     </div>
+    <div style="border: 3px solid black;">
+
+        <h2>Login</h2>
+        <form action="/login" method="POST">
+            @csrf
+            <input name="loginname" type="text" placeholder="name"/>
+            <input name="loginpassword" type="password" placeholder="password"/>
+            <button>Log in</button>
+        </form>
+
+    </div>
+    @endauth
+
+
+    
 </body>
 </html>
