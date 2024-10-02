@@ -1,4 +1,4 @@
-### Laravel-Simple-CRUD
+# Laravel-Simple-CRUD
 
 ## Summary
 A simple CRUD application created using the Laravel framework. The app allows for user registration and sign in. Once signed in users can create posts, edit posts and delete posts.
